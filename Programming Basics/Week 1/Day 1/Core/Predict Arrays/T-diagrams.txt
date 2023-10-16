@@ -1,0 +1,25 @@
+    Diagram1											Console:"["Paula", "Smith", "1234 Main Street", "St. Louis", "MO", 12345]"
+contactinfo	|["Paula", "Smith", "1234 Main Street", "St. Louis", "MO", 12345]
+		|
+		|
+		|
+
+
+    Diagram2											Console:"["broccoli", "ice cream","hashbrowns"]"
+produce		|["apples", "oranges"]
+frozen		|["broccoli", "ice cream"]
+frozen		|["broccoli", "ice cream","hashbrowns"]
+		|
+
+
+
+
+    Diagram3											Console:"["Bambi", "Beetlejuice", "Toy Story","Zorro"]"
+movieLibrary	|["Bambi", "E.T.", "Toy Story"]
+movieLibrary	|["Bambi", "E.T.", "Toy Story","Zorro"]
+movieLibrary	|["Bambi", "Beetlejuice", "Toy Story","Zorro"]
+		|
+
+
+
+
