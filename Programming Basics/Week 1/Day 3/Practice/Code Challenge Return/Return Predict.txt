@@ -1,0 +1,47 @@
+    	     Diagram 1				Console:"hello","Dojo"
+		|
+		|
+		|
+		|
+             Diagram 2				Console:"hello","result is : 15"
+	result	|15
+		|
+		|
+		|
+             Diagram 3				Console:"num is 3","result is 18"
+	result	|18
+		|
+		|
+		|
+             Diagram 4				Console:"15","10","10","15"
+	num	|15
+	result	|10
+		|
+		|
+     Diagram 5				Console:"15","10","10","15"
+	num	|15
+	result	|20
+		|
+		|
+     Diagram 6			Console:"num is 3","num is 5","result is 16"
+	result	|16
+	y	|6,10
+		|
+		|
+     Diagram 7			Console:"5","8"
+		|
+		|
+		|
+		|
+     Diagram 8			Console:"2","5","3","8"
+		|
+		|
+		|
+		|
+     Diagram 10		Console:"sum is 5","sum is 3",sum is 6",
+				"sum is 3","sum is 5","sums is 8",
+				"result is 19"
+	result	|19
+	sum	|5,3,6,3,5,8
+		|
+		|
