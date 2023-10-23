@@ -38,4 +38,4 @@ function reward (Day,Time){
     }
 
 }
-console.log( reward("Tuesday",0) )
+console.log( reward("heh",20) )
