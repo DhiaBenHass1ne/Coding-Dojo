@@ -1,0 +1,46 @@
+*{
+    background-color: aquamarine;
+}
+h1 {
+    color: brown;
+}
+
+p{
+    background-color: yellowgreen;
+}
+h2{
+    color: turquoise;
+    background-color: yellow;
+}
+div{
+    background-color: crimson;
+}
+.orange{
+    background-color: darkgreen;
+}
+.red{
+    background-color: lime;
+}
+button{
+    background-color: olive;
+    font-size: 20px;
+}
+#blue{
+    color: blue;
+}
+#moreBlue{
+    border-color: black;
+    border-radius: 120px;
+    color: blueviolet;
+    border-width: 10px;
+    
+}
+.change:hover{
+    background-color: darkgoldenrod;
+    font-size: 30px;
+}
+
+div h2:hover{
+    background-color: purple;
+
+}
