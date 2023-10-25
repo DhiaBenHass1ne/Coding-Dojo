@@ -1,0 +1,64 @@
+.container{
+    background-color: black;
+    height: 1059px;
+    width: 1059px;
+    
+}
+.bigrow{
+    flex: 2;
+    display: flex;
+}
+#sidew{
+    background-color: white;
+    margin-bottom: 30px;
+    height: 333px;
+    width: 333px;
+
+}
+#bigred{
+    background-color: red;
+    height: 696px;
+    width: 696px;
+    margin-left: 30px;
+}
+.botrow{
+    display:flex ;
+    flex: 1;
+}
+#blue{
+    background-color: blue;
+    height: 333px;
+    width: 333px;
+}
+#bigw{
+    background-color: white;
+    height: 333px;
+    width: 555px;
+    margin-left: 30px;
+}
+.twosqr{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+}
+#white{
+    background-color:white ;
+    height: 150px;
+    width: 111px;
+    margin-left: 30px;
+    margin-bottom: 15px;
+
+}
+#yellow{
+    background-color:yellow ;
+    height: 152px;
+    width: 111px;
+    margin-left: 30px;
+    margin-top: 15px;
+
+}
+.bothalf2{
+    display: flex;
+}
+

@@ -1,0 +1,26 @@
+.row{
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+    line-height: 2.5;
+    color: white;
+}
+div{
+    padding-left: 10px;
+}
+.col{
+    margin: 10px;
+    flex: 1;
+    background-color: #659DA1;
+}
+.col-2{
+    margin: 10px;
+    flex: 2;
+    background-color: #659DA1;
+}
+.col-3{
+    margin: 10px;
+    flex: 3;
+    background-color: #659DA1;
+}
