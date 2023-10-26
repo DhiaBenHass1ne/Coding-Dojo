@@ -1,0 +1,96 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+.container{
+    display: flex;
+    flex-direction:column;
+    width: 800px;
+    height: 550px;
+    background-color: rgb(255, 158, 2);
+    margin-top: 50px;
+    border: 5px solid black;
+}
+#banner{
+    background-color:#17A2B8 ;
+    width: 800px;
+    height: 200px;
+}
+#card{
+    display: flex;
+    background-color: white;
+    width: 800px;
+    height: 350px;
+}
+.frame{
+    height: 250px;
+    background-color: beige;
+    position: relative;
+    top: 60%;
+    left: 5%;
+}
+#pfp{
+    border: 5px solid white;
+    border-radius: 200px;
+    width: 150px;
+    position: relative;
+    top: 120px;
+    left: 40px;
+}
+.text{  
+    height: fit-content;
+    position: relative;
+    display: flex;
+    font-family:cursive;
+
+}
+#name{
+    position: relative;
+    color: black;
+    top: 90px;
+    left: 20px;
+    font-size:35px;
+    font-weight: bold;
+}
+#map{
+    height: 25px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.pos{
+    display: flex;
+    position: relative;
+    top: 150px;
+    left: -145px;
+    font-size: larger;
+}
+#city{
+    position: relative;
+    top: 5px;
+    font-size: larger;
+    font-weight: 600;
+}
+.description{
+    position: relative;
+    top: 200px;
+    left: -255px;
+    font-size: 20px;
+}
+.settings{
+    position: relative;
+    display: flex;
+    height: fit-content;
+    top: 270px;
+    left: -610px;
+}
+.settings img{
+    position: relative;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+.setting a{
+    position: relative;
+    margin-left: 10px;
+
+}
