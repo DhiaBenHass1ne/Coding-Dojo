@@ -7,4 +7,10 @@ function randomPizza(){
     var pizza={};
         pizza.crust=crusts[Math.floor(Math.random()*(crusts.length))];
         pizza.sauce=sauces[Math.floor(Math.random()*(sauces.length))];
+        pizza.cheese=cheese[Math.floor(Math.random()*(cheese.length))];
+        pizza.toppings=toppings[Math.floor(Math.random()*(toppings.length))];
+
+    console.log(pizza);
 }
+
+randomPizza();
