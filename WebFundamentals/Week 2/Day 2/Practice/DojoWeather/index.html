@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar myflex">
+            <h1>DojoWeather</h1>
+            <ul onclick="message()" class="navlinks myflex">
+                <li>Burbank</li>
+                <li>Chicago</li>
+                <li>Dallas</li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="settings myflex">
+            <h2>San Jose</h2>
+            <h5>show temperature in</h5>
+            <select name="temperature" id="temp" onchange="convert(this)">
+                <option value="C">°C</option>
+                <option value="F">°F</option>
+            </select>
+        </div>
+        <div class="weather myflex">
+            <div class="panel today">
+                <h3>Today</h3>
+                <img src="assets/some_rain.png" alt="rain">
+                <h5>some rain</h5>
+                <div class="numbers myflex" id="one">
+                    <h3 class="hot">24°</h3>
+                    <h3 class="cold">18°</h3>
+                </div>
+            </div>
+            <div class="panel tomorrow">
+                <h3>Tomorrow</h3>
+                <img src="assets/some_sun.png" alt="rain">
+                <h5>some rain</h5>
+                <div class="numbers myflex" id="two">
+                    <h3 class="hot">27°</h3>
+                    <h3 class="cold">19°</h3>
+                </div>
+            </div>
+            <div class="panel friday">
+                <h3>Friday</h3>
+                <img src="assets/some_clouds.png" alt="rain">
+                <h5>some rain</h5>
+                <div class="numbers myflex" id="three">
+                    <h3 class="hot">21°</h3>
+                    <h3 class="cold">16°</h3>
+                </div>
+            </div>
+            <div class="panel saturday">
+                <h3>Saturday</h3>
+                <img src="assets/some_sun.png" alt="rain">
+                <h5>some rain</h5>
+                <div class="numbers myflex" id="four">
+                    <h3 class="hot">26°</h3>
+                    <h3 class="cold">21°</h3>
+                </div>
+            </div>
+        </div>
+        <div class="cookie myflex">
+            <img src="assets/cookie.png" alt="biscuit">
+            <div class="msg">
+                <h4>Stop! Cookie time</h4>
+                <p>We use cookies (sadly not the edible ones)
+                    to personalize <br> content and ads, to provide social
+                    media features and to <br> analyse our traffic. <a href="#">Read more...</a>
+                </p>
+            </div>
+            <button onclick="removeMe()">I Accept</button>
+        </div>
+    </main>
+<script src="script.js"></script>
+</body>
+</html>
