@@ -3,100 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
+    <title>Profile Page</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="container">
-    <header>
-        <div class="nav">
-            <ul class="navlinks">
+
+    <div class="nav">
+        <div class="flex-container">
+            <ul class="nav-links">
                 <h1 class="nav-title">Profile</h1>
                 <li><a href="#">Home</a></li>
                 <li><a href="#" class="active">My Profile</a></li>
-                <li><a href="#">Find Connections</a></li></ul>
+                <li><a href="#">Find Connections</a></li>
+            </ul>
             <button class="btn">Sign Out</button>
         </div>
-    </header>
+    </div>
 
-<main>
-    <mainhalf1>
-        <div class="card"> 
-            <div id="banner">
-                <img id="pfp" src="Assets/images/jane-m.jpg" alt="n/a">
-            </div>
-            <div id="bottom">
-                <p id="pname">Jane Doe</p>
-                <img id="iconmap" src="Assets/icons/map-marker.png" alt="n/a">
-                <p id="city">Seattle</p>
-                <p id="description">Developer | Engineer | Problem Solver <br> Master of shadows and the Internet!</p>
-                <img id="icongear" src="Assets/icons/gear.png" alt="n/a">
-                <a href="https://www.google.com">edit profile</a>
-            </div>
-            
-        </div>
-        <div class="education">
-            <div id="edu-title"><span>Education</span></div>
-            <div id="edu-detail">
-                <h3>Coding Dojo - Full Stack Bootcamp</h3>
-                <h5>Dec 2019 - Mar 2020</h5>
-                <h6>Triple black belt in Python,MERN and C#...</h6>
-            </div>
-        </div>
-    </mainhalf1>
-    <mainhalf2>
+    <div class="flex-container main">
 
-        <div class="requests">
-            <div id="req-title">
-                <span id="req-num">2</span>
-                <span>Connection Requests</span>
-            </div>
-            <div id="req-list">
-                <div id="req">
-                    <span id="pic"><img src="Assets/images/todd-s.jpg" alt="n/a"></span>
-                    <p>Todd E</p>
-                    <span id="accept"><img src="Assets/icons/accept-circle.png" alt="n/a"></span>
-                    <span id="reject"><img src="Assets/icons/close-circle.png" alt="n/a"></span>
+        <div class="col-2">
+
+            <div class="card user-card">
+                <div class="card-header">
+                    <img src="Assets/images/jane-m.jpg" alt="jane" class="picture">
                 </div>
-                <div id="req">
-                    <span id="pic"><img src="Assets/images/phil-s.jpg" alt="n/a"></span>
-                    <p>Phill K</p>
-                    <span id="accept"><img src="Assets/icons/accept-circle.png" alt="n/a"></span>
-                    <span id="reject"><img src="Assets/icons/close-circle.png" alt="n/a"></span>
+                <div class="card-body">
+                    <h1>Jane Doe</h1>
+                    <h3><img src="Assets/icons/map-marker.png" alt="pin" class="icon-s"> Seattle</h3>
+                    <p>Developer | Engineer | Problem Solver<br>
+                    Master of shadows and the Internet!</p>
+                    <h3><img src="Assets/icons/gear.png" alt="gear" class="icon-s"><a href="#">edit profile</a></h3>
                 </div>
             </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h3>Education</h3>
+                </div>
+                <div class="card-body">
+                    <h2>Coding Dojo - Full Stack Bootcamp</h2>
+                    <p class="dates">Dec 2019 - Mar 2020</p>
+                    <p>Triple black belt in Python, MERN, and C#...</p>
+                </div>
+            </div>
+
         </div>
 
-        <div class="connections">
-            <div id="con-title">
-                <span id="con-num">500+</span>
-                <span>Your Connections</span>
+        <div class="col-1">
+
+            <div class="card">
+                <div class="card-header">
+                    <span class="badgereq">2</span>
+                    <h3>Connection Requests</h3>
+                </div>
+                <ul class="card-list">
+                    <li class="card-list-item">
+                        <span>
+                            <img src="Assets/images/todd-s.jpg" alt="todd" class="avatar-s">
+                            Todd E
+                        </span>
+                        <span>
+                            <img src="Assets/icons/accept-circle.png" alt="accept" class="icon" onclick="accept('.card-list-item')">
+                            <img src="Assets/icons/close-circle.png" alt="close" class="icon" onclick="ignore('.card-list-item')">
+                        </span>
+                    </li>
+                    <li class="card-list-item">
+                        <span>
+                            <img src="Assets/images/phil-s.jpg" alt="phil" class="avatar-s">
+                            Phil E
+                        </span>
+                        <span>
+                            <img src="Assets/icons/accept-circle.png" alt="accept" class="icon" onclick="accept('.card-list-item')">
+                            <img src="Assets/icons/close-circle.png" alt="close" class="icon" onclick="ignore('.card-list-item')">
+                        </span>
+                    </li>
+                </ul>
             </div>
-            <div id="con-list">
-                <div id="con">
-                    <span id="conpic"><img src="Assets/images/adrien-s.jpg" alt="n/a"></span>
-                    <span> Adrien S</span>
+
+            <div class="card">
+                <div class="card-header">
+                    <span class="badgecon">498+</span>
+                    <h3>Your Connections</h3>
                 </div>
-                <div id="con">
-                    <span id="conpic"><img src="Assets/images/anne-s.jpg" alt="n/a"></span>
-                    <span> Anne J</span>
-                </div>
-                <div id="con">
-                    <span id="conpic"><img src="Assets/images/alayne-s.jpg" alt="n/a"></span>
-                    <span> Alayne T</span>
-                </div>
-                <div id="con">
-                    <span id="conpic"><img src="Assets/images/arry-s.jpg" alt="n/a"></span>
-                    <span> Arry Y</span>
-                </div>
-                <div id="view">
+                <ul class="card-list">
+                    <li class="card-list-item start">
+                        <img src="Assets/images/adrien-s.jpg" alt="adrien" class="avatar-s">
+                        Adrien D
+                    </li>
+                    <li class="card-list-item start">
+                        <img src="Assets/images/anne-s.jpg" alt="anne" class="avatar-s">
+                        Anne J
+                    </li>
+                    <li class="card-list-item start">
+                        <img src="Assets/images/alayne-s.jpg" alt="alayne" class="avatar-s">
+                        Alayne T
+                    </li>
+                    <li class="card-list-item start">
+                        <img src="Assets/images/arry-s.jpg" alt="arry" class="avatar-s">
+                        Arry Y
+                    </li>
+                </ul>
+                <div class="card-footer">
                     <a href="#">View More</a>
                 </div>
             </div>
+
         </div>
-        
-    </mainhalf2>
-</main>
-</div>
+    </div>
 </body>
 </html>
