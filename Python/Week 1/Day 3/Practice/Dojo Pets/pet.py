@@ -1,4 +1,6 @@
 class Pet:
+
+    a=10
 # implement __init__( name , type , tricks ):
 
     def __init__(self,name,type,tricks,health,energy):
