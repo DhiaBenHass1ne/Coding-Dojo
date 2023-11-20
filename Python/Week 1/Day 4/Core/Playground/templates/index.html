@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playground</title>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    .box{
+        height: 250px;
+        width: 300px;
+        background-color: {{color}};
+        border: 2px solid black;
+        border-radius: 5%;
+    }
+
+    .container{
+        justify-content: space-evenly;
+    }
+
+    .myflex{
+        display: flex;
+    }
+    h1{
+        font-size: 50px;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+    <h1>Welcome!</h1>
+    <div class="container myflex">
+        {%for i in range(num)%}
+        <div class="box"></div>
+        {%endfor%}
+    </div>
+
+</body>
+</html>
