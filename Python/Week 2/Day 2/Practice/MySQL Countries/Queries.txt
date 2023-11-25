@@ -1,0 +1,15 @@
+select Name, Language, Percentage from country join countrylanguage on Code=CountryCode where Language= "Slovene" order by Percentage DESC;
+
+select country.Name, count(ID) from country join city on Code=CountryCode group by country.Name order by count(ID) DESC;
+
+select city.name, city.Population, Countrycode from city join country on CountryCode=Code Where country.name = "Mexico" and city.Population >= 500000 order by city.Population DESC;
+
+select name, language, percentage from countrylanguage join country on code = countrycode where percentage > 89 order by percentage desc;
+
+select name, SurfaceArea, Population from country where surfacearea < 501 and Population > 100000;
+
+select name, governmentform, capital, lifeexpectancy from country where capital > 200 and LifeExpectancy> 75 and GovernmentForm="constitutional monarchy";
+
+select country.name, city.name, district, city.population from country join city on Code=Countrycode where country.name ="Argentina" and district="Buenos Aires" and city.population>500000;
+
+select region, count(Code) from country group by region order by count(code) DESC;
