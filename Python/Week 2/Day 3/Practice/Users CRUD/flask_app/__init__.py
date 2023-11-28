@@ -3,4 +3,4 @@ from flask import Flask
 app = Flask(__name__)
 app.secret_key = "Classified!"
 
-DATABASE = #database name
+DATABASE = "users_schema"
