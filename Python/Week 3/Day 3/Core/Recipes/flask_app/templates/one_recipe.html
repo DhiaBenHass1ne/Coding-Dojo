@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Recipes</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Welcome, {{loggedin_user.first_name}}</h1>
+                <h1>{{recipe.name}}</h1>
+            </div>
+            <div class="col">
+                <a href="/recipes">Back to Recipes</a>
+                <a href="/logout">Logout</a>
+                <h3>Posted by: {{creator.first_name}}</h3>
+            </div>
+    <div style="border: 3px solid black;">
+        <p>Description: {{recipe.description}}</p>
+        <p>Under 30 Minutes?: {% if recipe.under == 1 %}Yes {% else %} No {% endif %}</p>
+        <p>Instructions: {{recipe.instructions}}</p>
+        <p>Date Made: {{recipe.date_cooked}}</p>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+</html>
