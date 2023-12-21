@@ -25,7 +25,10 @@ const pokémon = Object.freeze([
 ]);
 
 const p1 = pokémon.filter (p => p.id % 3 === 0);
-const p2 = pokémon.filter (p => p.types % 3 === 0);
-const p3 = pokémon.filter (p => p.id % 3 === 0);
-const p4 = pokémon.filter (p => p.id % 3 === 0);
-console.log(p1)
+const p2 = pokémon.filter (p=> p.types.includes("fire"))
+const p3 = pokémon.filter (p => {return p.types.length > 1});
+const p4 = pokémon.map (p => p.name);
+const p5 = pokémon.filter (p => p.id > 99).map(n => n.name);
+const p6 = pokémon.filter (p => p.types=="poison").map(n => n.name);
+const p7 = pokémon.filter (p => p.types [1] == "flying").map (t=> t.types[0]);
+const p8 = pokémon.filter (p => p.types.includes("normal")).length;
