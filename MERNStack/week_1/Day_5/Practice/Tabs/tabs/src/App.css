@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family:sans-serif;
+  background: #2c3e50;
+  color: #ecf0f1;
+  line-height: 1.618em;
+}
