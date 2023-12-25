@@ -24,20 +24,40 @@ const UserForm = () => {
             </div>
             <div>
                 <label>Last Name: </label> 
-                <input onChange={ (e) => setLastname(e.target.value) } />
-            </div>
+                <input onChange={ (e) => { setLastname(e.target.value);
+                if (lastname.length < 2){
+                    setError("last name must be atleast 2 characters")
+                } else{
+                    setError("")
+                }
+                } } />            </div>
             <div>
                 <label>Email Address: </label> 
-                <input onChange={ (e) => setEmail(e.target.value) } />
-            </div>
+                <input onChange={ (e) => { setEmail(e.target.value);
+                if (email.length < 2){
+                    setError("Email must be atleast 2 characters")
+                } else{
+                    setError("")
+                }
+                } } />            </div>
             <div>
                 <label>Password: </label>
-                <input type='password' onChange={ (e) => setPassword(e.target.value) } />
-            </div>
+                <input onChange={ (e) => { setPassword(e.target.value);
+                if (password.length < 7){
+                    setError("Password must be atleast 8 characters")
+                } else{
+                    setError("")
+                }
+                } } />            </div>
             <div>
                 <label>Confirm Password: </label>
-                <input type='password' onChange={ (e) => setCpassword(e.target.value) } />
-            </div>
+                <input onChange={ (e) => { setCpassword(e.target.value);
+                if (cpassword !== password){
+                    setError("Password must match")
+                } else{
+                    setError("")
+                }
+                } } />             </div>
         </form>
             
             <p> {error}</p>
