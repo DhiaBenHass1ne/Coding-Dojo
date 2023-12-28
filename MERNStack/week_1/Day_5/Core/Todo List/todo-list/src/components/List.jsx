@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 const List = ({tasks,deleteHandler,checkHandler}) => {
 console.log("===>",tasks)
-// const [listTask,setListTask]=useState(tasks);
+const [listTask,setListTask]=useState(tasks);
     return (
         <div>
             {tasks.map((one_task, idx)=>{return (
