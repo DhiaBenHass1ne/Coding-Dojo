@@ -39,7 +39,7 @@ const Home = () => {
             <tbody className='table-group-divider'>
                 {products? products.map(one_product=>
                 <tr key={one_product._id}>
-                    <td>{one_product.title}</td>
+                    <td><Link to={`/product/${one_product._id}`}>{one_product.title}</Link></td>
                     <td>{one_product.price} DT</td>
                     <td>{one_product.description}</td>
                     <td><Link to={`/product/update/${one_product._id}`}><button className='btn btn-warning'>Edit</button></Link></td>
