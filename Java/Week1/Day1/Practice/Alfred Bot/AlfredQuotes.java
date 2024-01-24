@@ -25,9 +25,5 @@ public class AlfredQuotes {
         }
     }
     
-	// NINJA BONUS
-	// See the specs to overload the guestGreeting method
-        // SENSEI BONUS
-        // Write your own AlfredQuote method using any of the String methods you have learned!
-}
+	}
 
